@@ -46,7 +46,6 @@ let first = true;
     })
 
 S_BUTTON.addEventListener("click", ()=>{
-    console.log(first);
     if(first == true){
         first = false;
 
