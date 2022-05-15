@@ -10,36 +10,47 @@ let first = true;
             
             if(first == true){
 
-                //Km -- Mile
-                let mile;
-                mile = (0.621371192 * INPUTS[0].value); 
-                INPUTS[1].value = mile.toFixed(4); 
+                //t -- lb
+                let funt0;
+                funt0 = (2204.62262 * INPUTS[0].value); 
+                INPUTS[1].value = funt0.toFixed(3); 
             
-                //Kg -- Funt
-                let funt;
-                funt = (2.20462262 * INPUTS[2].value);
-                INPUTS[3].value = funt.toFixed(2);
+                //kg -- lb
+                let funt1;
+                funt1 = (2.20462262 * INPUTS[2].value);
+                INPUTS[3].value = funt1.toFixed(3);
 
-                //C -- K
-                let kelviny;
-                kelviny = parseInt(INPUTS[4].value) + 273.15;
-                INPUTS[5].value = kelviny;
+                //dag -- lb
+                let funt2;
+                funt2 = (0.0244192843874988 * INPUTS[4].value);
+                INPUTS[5].value = funt2.toFixed(3);
+
+                //g -- lb
+                let funt3;
+                funt3 = (0.00220462262 * INPUTS[6].value);
+                INPUTS[7].value = funt3.toFixed(3);
+                
             }else{
 
-                //Mile -- Km
-                let km;
-                km = (1.60934 * INPUTS[1].value);
-                INPUTS[0].value = km.toFixed(2);
-
-                //Funt -- Kg
+                //lb -- t
+                let t;
+                t = (0.00045359237 * INPUTS[1].value); 
+                INPUTS[0].value = t.toFixed(3); 
+            
+                //lb -- kg
                 let kg;
-                kg = (0.4535923 * INPUTS[3].value);
-                INPUTS[2].value = kg.toFixed(2);
+                kg = (0.45359237 * INPUTS[3].value);
+                INPUTS[2].value = kg.toFixed(3);
 
-                //K -- C 
-                let celsjusz;
-                celsjusz = parseInt(INPUTS[5].value) - 273.15;
-                INPUTS[4].value = celsjusz.toFixed(2);
+                //lb -- dag
+                let dag;
+                dag = (45.36 * INPUTS[5].value);
+                INPUTS[4].value = dag.toFixed(3);
+
+                //lb -- g
+                let g;
+                g = (453.59 * INPUTS[7].value);
+                INPUTS[6].value = g.toFixed(3);
             }
 
         })

@@ -14,15 +14,13 @@ main{
     width: 500px;
     height: 500px;
     box-shadow: 0px 0px 24px 10px black;
-
-
 }
 main p {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     text-shadow: 0px 0px 20px black;
-    margin: 30px 30px 30px 30px;    
+    margin: 20px 30px 20px 30px;    
 
 }
 main input{
@@ -39,26 +37,37 @@ main input{
 main input:hover{
     box-shadow: 0px 0px 28px 20px black;
 }
-.text-left{
-    float: left;
+main input:focus{
+    transform: scale(1.2);
 }
-.text-right{
-    float: right;
-}
-.switch{
+.button{
     width: 40px;
     height: 40px;
     font-size: 40px;
-    display: block;
-    margin: 440px 230px 0px 230px;
     box-shadow: 0px 0px 14px 5px white;
     border-radius: 100%;
+    background-color: white;
+    margin: 30px 100px 0px 100px ;
+}
+.text-left, .back{
+    float: left;
+}
+.text-right, .switch{
+    float: right;
+}
+.switch, .back{
     transition-duration: 2s;
     cursor: pointer;
 }
-.switch:hover{
+.switch:hover, .back:hover{
     box-shadow: 0px 0px 20px 10px white;
+    transform: scale(1.2);
 }
+.switch:hover{
+    transform: rotate(-360deg) scale(1.2);
+}
+
+
 
 @keyframes switchAnimation {
     from{
